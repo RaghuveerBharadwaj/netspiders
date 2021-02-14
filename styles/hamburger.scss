@@ -1,0 +1,21 @@
+.hamburger {
+  display: none;
+  cursor: pointer;
+
+  span {
+    position: relative;
+    display: block;
+    height: 4px;
+    width: 32px;
+    background: #000;
+    border-radius: 6px;
+    opacity: 1;
+    margin: 4px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}

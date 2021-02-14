@@ -1,0 +1,35 @@
+.services {
+  background: linear-gradient(to right bottom, rgba(186, 0, 0, 0.2), rgba(53, 0, 0, 0.2));
+  background-size: cover;
+  text-align: center;
+
+  .service-header {
+    padding: 50px 10px;
+  }
+
+  .all-services {
+    max-width: 1040px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .service {
+      width: 23%;
+      height: 320px;
+      margin-bottom: 2%;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0 4px 4px;
+      @media only screen and (max-width: 768px) {
+        width: 90%;
+        margin-bottom: 5%;
+      }
+    }
+  }
+
+  .curve {
+    margin: 50px 0 -2px;
+  }
+
+}

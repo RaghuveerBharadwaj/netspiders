@@ -1,0 +1,136 @@
+.contact {
+  background-color: white;
+  margin-top: -20px;
+  padding: 100px 10px 10px;
+  min-height: 100vh;
+
+  h1 {
+    color: white;
+    max-width: 768px;
+    margin: 0 auto 50px;
+  }
+
+  .frame {
+    background: linear-gradient(to right bottom, rgba(186, 0, 0, 0.2), rgba(53, 0, 0, 0.2));
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: auto;
+    width: 140px;
+    border-radius: 50%;
+    height: 140px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 4px 8px;
+    overflow: visible;
+    margin-bottom: -60px;
+    z-index: 20;
+
+    img {
+      z-index: 20;
+      position: relative;
+      left: -2px;
+      top: -40px;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      transition: all 1s ease-in-out;
+    }
+  }
+
+  .form {
+    z-index: 1;
+    background: linear-gradient(to right bottom, rgba(186, 0, 0, 0.2), rgba(53, 0, 0, 0.2));
+    max-width: 768px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 40px 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6%;
+    position: relative;
+    @media only screen and (max-width: 768px) {
+      padding: 20px;
+    }
+
+    .full,
+    .half {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      position: relative;
+
+      &.full {
+        width: 100%;
+      }
+
+      &.half {
+        width: 47%;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+
+      label {
+        align-self: flex-start;
+        font-weight: 600;
+        color: darkred;
+        margin: 5px;
+      }
+
+      span {
+        margin: 2px 5px 0;
+        align-self: flex-start;
+        color: tomato;
+      }
+
+      input, textarea {
+        height: 40px;
+        padding: 5px 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border-color: transparent;
+        outline: transparent;
+
+        &.error {
+         border-color: tomato;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      textarea {
+        height: 100px;
+      }
+    }
+
+    button {
+      display: block;
+      margin: auto;
+      width: 200px;
+      background-color: transparent;
+      border: 3px solid darkred;
+      border-radius: 25px;
+      font-size: 20px;
+      height: 50px;
+      color: darkred;
+      font-weight: bold;
+      cursor: pointer;
+      transition: .4s linear;
+      margin-top: 10px;
+
+      &:hover {
+        color: white;
+        background-color: darkred;
+        border: 3px solid darkred;
+      }
+
+      &:focus {
+        color: white;
+        outline: none;
+        background-color: darkred;
+        border: 3px solid darkred;
+      }
+    }
+  }
+}
