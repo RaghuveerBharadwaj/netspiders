@@ -5,10 +5,14 @@
 
   .service-header {
     padding: 50px 10px;
+    h2 {
+      font-size: 2.5em;
+      margin-bottom: -.2em;
+    }
   }
 
   .all-services {
-    max-width: 1040px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -18,9 +22,32 @@
       width: 23%;
       height: 320px;
       margin-bottom: 2%;
-      background-color: white;
+      background: linear-gradient(90deg, #fceeee, whitesmoke, white,white, white,whitesmoke, #fceeee);
       border-radius: 20px;
       box-shadow: rgba(0, 0, 0, 0.2) 0 4px 4px;
+      padding: 10px;
+      position: relative;
+
+      span {
+        position: absolute;
+        top: -60px;
+      }
+
+      h4 {
+        font-size: 1.2em;
+        height: 50px;
+        max-width: 160px;
+        margin: auto;
+        margin-top: .5em;
+        color: darkred;
+      }
+
+      p {
+         text-align: center;
+         max-height: 189px;
+         overflow-y: hidden;
+      }
+
       @media only screen and (max-width: 768px) {
         width: 90%;
         margin-bottom: 5%;

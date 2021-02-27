@@ -10,15 +10,13 @@ export const Landing = () => {
         <div>
           <h1>
             DIGITAL MARKETING & <br />
-        WEB DEVELOPMENT COMPANY
-      </h1>
+            WEB DEVELOPMENT COMPANY
+          </h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type
-            specimen book. It has survived not only five centuries
-      </p>
+          Web development is the work involved in developing a Web site for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications, electronic businesses, and social network.
+          </p>
         </div>
+        <img className="landing-image" src="web-development.svg" alt="Digital Marketng and Web Development"/>
       </main>
     </div>
   )

@@ -1,8 +1,7 @@
 .footer {
   background-color: darkred;
   position: relative;
-  color: white;
-  margin-top: 100px;
+  color: rgb(221, 219, 219);
   padding-top: 20px;
   @media only screen and (max-width: 768px) {
     display: none;
@@ -12,12 +11,21 @@
     max-width: 1040px;
     margin: auto;
 
+    h2 {
+      color: white;
+      text-align: center;
+    }
+
   .footer-links {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     a {
       display: block;
+      padding: 8px 0;
+      &:hover {
+        color: white;
+      }
     }
   }
 
@@ -37,7 +45,7 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 20px 10px;
+  padding: 40px 10px 20px;
 
   .social-link {
     cursor: pointer;

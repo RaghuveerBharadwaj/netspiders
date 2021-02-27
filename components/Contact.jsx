@@ -76,39 +76,37 @@ export const Contact = () => {
 
   return (
     <div className="contact" id="contact">
-      <img width={0} height={0} src={`/contact/contact.png`} alt="Raghuveer Portfolio Contact" />
-      <img width={0} height={0} src={`/contact/contact-yes.png`} alt="Raghuveer Portfolio Success" />
-      <img width={0} height={0} src={`/contact/contact-no.png`} alt="Raghuveer Portfolio Don't Close" />
-      <img width={0} height={0} src={`/contact/contact-err.png`} alt="Raghuveer Portfolio Error" />
-      <img width={0} height={0} src={`/contact/contact-typing.png`} alt="Raghuveer Portfolio Error" />
-
-      <div className="frame">
-        <img src={`/contact/contact${pic}.png`} alt="Raghuveer Portfolio Contact" />
+      <img className="blur-img" src="contact.svg" alt="Contact Us" />
+      <div className="contact-header">
+        <h2>Contact Us</h2>
+        <p>Have a question for us? Drop us a message and we will get back to you at the earliest.</p>
       </div>
-
-      <div className="form">
-        <div className="full">
-          <label htmlFor="name">Name</label>
-          <input className={error.name && "error"} placeholder="James Bond" name="name" onChange={handleChange} value={form.name} type="text" />
-          <span>{error.name}</span>
-        </div>
-        <div className="half">
-          <label htmlFor="email">Email</label>
-          <input className={error.email && "error"} placeholder="james@gmail.com" name="email" onChange={handleChange} value={form.email} type="email" />
-          <span>{error.email}</span>
-        </div>
-        <div className="half">
-          <label htmlFor="phone">Phone Number</label>
-          <input className={error.phone && "error"} placeholder="9876543210" name="phone" onChange={handleChange} value={form.phone} type="tel" />
-          <span>{error.phone}</span>
-        </div>
-        <div className="full">
-          <label htmlFor="message">Message</label>
-          <textarea className={error.message && "error"} placeholder="Type your message..." name="message" onChange={handleChange} value={form.message} type="text" />
-          <span>{error.message}</span>
-        </div>
-        <div className="full">
-          <button onClick={postMessage}>Submit</button>
+      <div className="flex">
+        <img className="contact-img" src="contact.png" alt="Contact Us" />
+        <div className="form">
+          <div className="full">
+            <label htmlFor="name">Name</label>
+            <input className={error.name && "error"} placeholder="James Bond" name="name" onChange={handleChange} value={form.name} type="text" />
+            <span>{error.name}</span>
+          </div>
+          <div className="half">
+            <label htmlFor="email">Email</label>
+            <input className={error.email && "error"} placeholder="james@gmail.com" name="email" onChange={handleChange} value={form.email} type="email" />
+            <span>{error.email}</span>
+          </div>
+          <div className="half">
+            <label htmlFor="phone">Phone Number</label>
+            <input className={error.phone && "error"} placeholder="9876543210" name="phone" onChange={handleChange} value={form.phone} type="tel" />
+            <span>{error.phone}</span>
+          </div>
+          <div className="full">
+            <label htmlFor="message">Message</label>
+            <textarea className={error.message && "error"} placeholder="Type your message..." name="message" onChange={handleChange} value={form.message} type="text" />
+            <span>{error.message}</span>
+          </div>
+          <div className="full">
+            <button onClick={postMessage}>Submit</button>
+          </div>
         </div>
       </div>
     </div>

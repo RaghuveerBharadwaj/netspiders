@@ -1,16 +1,29 @@
 .about {
-  max-width: 1040px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 100px 10px;
-  div {
-    width: 50%;
+  padding: 40px 10px;
+  position: relative;
+  img {
+    max-width: 65vw;
+  }
+  .content {
+    min-width: 320px;
+    margin-right: 50px;
+    h2 {
+      font-size: 2.5em;
+      text-align: center;
+    }
   }
   @media only screen and (max-width: 768px) {
     flex-direction: column;
+    img {
+      max-width: unset;
+    }
     div {
       width: 100%;
+      p {
+        text-align: justify;
+      }
     }
   }
 }
