@@ -1,13 +1,13 @@
 import { useState } from 'react'
+import { CustomConfetti } from './Confetti'
+import { Flip } from 'react-reveal'
 
 export const Contact = () => {
   const [form, setForm] = useState({})
-  const [pic, setPic] = useState("")
   const [error, setError] = useState({})
-
+  const [isConfetti, setIsConfetti] = useState(false)
 
   const handleChange = e => {
-    setPic("-typing")
     setForm({
       ...form,
       [e.target.name]: e.target.value
@@ -48,9 +48,6 @@ export const Contact = () => {
 
   const postMessage = async () => {
     const err = errorCheck()
-    Object.keys(err)?.length > 0
-      ? setPic("-err")
-      : setPic("-yes")
     if (!Object.keys(err)?.length > 0) {
       await fetch('https://api.emailjs.com/api/v1.0/email/send', {
         method: 'POST',
@@ -66,13 +63,28 @@ export const Contact = () => {
         })
       })
         .then((rep) => {
-          setForm({})
+          setForm({
+            name: "",
+            email: "",
+            phone: "",
+            message: ""
+          })
+          setIsConfetti(true)
+          setTimeout(() => setIsConfetti(false), 500)
         })
         .catch((error) => {
           console.error(error)
         })
     }
   }
+
+  const confettiDispersion = [
+    { top: '50px', left: '20%' },
+    { bottom: '50px', left: '20%' },
+    { top: '50px', left: '80%' },
+    { bottom: '50px', left: '80%' },
+    { top: '50%', left: '50%' },
+  ]
 
   return (
     <div className="contact" id="contact">
@@ -81,9 +93,15 @@ export const Contact = () => {
         <h2>Contact Us</h2>
         <p>Have a question for us? Drop us a message and we will get back to you at the earliest.</p>
       </div>
+      {confettiDispersion.map((style, i) =>
+        <div key={i} style={style} className="confetti">
+          <CustomConfetti isActive={isConfetti} />
+        </div>)}
       <div className="flex">
-        <img className="contact-img" src="contact.png" alt="Contact Us" />
-        <div className="form">
+      <Flip ssrFadeout>
+        <img className="contact-img" src="contact.svg" alt="Contact Us" />
+        </Flip>
+        <div id="form" className="form">
           <div className="full">
             <label htmlFor="name">Name</label>
             <input className={error.name && "error"} placeholder="James Bond" name="name" onChange={handleChange} value={form.name} type="text" />

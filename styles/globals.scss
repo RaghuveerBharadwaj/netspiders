@@ -24,3 +24,7 @@ a {
 p {
   color: #4F4F4F;
 }
+::selection {
+  color: white;
+  background: darkred;
+}

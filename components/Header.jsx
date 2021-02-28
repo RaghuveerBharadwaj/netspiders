@@ -11,7 +11,7 @@ export const Header = () => {
     <>
       <div onClick={() => setOpen(!open)} style={{ left: open ? '0vw' : '100vw' }} className="darkred-con">
         <div className="menu">
-          <a href="#landing">HOME</a>
+          <a href="/">HOME</a>
           <a href="#about">ABOUT US</a>
           <a href="#services">SERVICES</a>
           <a href="#contact">CONTACT US</a>
@@ -26,11 +26,11 @@ export const Header = () => {
 
       <header style={isScrolled || open ? { backgroundColor: '#FFF' } : { backgroundColor: 'transparent' }}>
         <div className="menu-container">
-          <a href="#landing">
+          <a href="/">
             <img src="logo.png" alt="Net Spiders Logo" title="Net Spiders Logo" />
           </a>
           <div className="menu">
-            <a href="#landing">HOME</a>
+            <a href="/">HOME</a>
             <a href="#about">ABOUT US</a>
             <a href="#services">SERVICES</a>
             <a href="#contact">CONTACT US</a>
