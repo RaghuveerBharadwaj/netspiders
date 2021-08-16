@@ -9,8 +9,7 @@ export const Landing = () => {
         <div>
           <Zoom ssrFadeout>
             <h1>
-              DIGITAL MARKETING & <br />
-              WEB DEVELOPMENT COMPANY
+              Digital Marketing Agency Mysore | NetSpiders
             </h1>
           <p>
           Web development is the work involved in developing a Web site for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications, electronic businesses, and social network.
