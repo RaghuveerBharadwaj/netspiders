@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { CustomConfetti } from './Confetti'
-import { Flip } from 'react-reveal'
+import { Zoom } from 'react-reveal'
 
 export const Contact = () => {
   const [form, setForm] = useState({})
@@ -98,9 +98,9 @@ export const Contact = () => {
           <CustomConfetti isActive={isConfetti} />
         </div>)}
       <div className="flex">
-      <Flip ssrFadeout>
-        <img className="contact-img" src="contact.svg" alt="Contact Us" />
-        </Flip>
+        <Zoom>
+          <img className="contact-img" src="contact.svg" alt="Contact Us" />
+        </Zoom>
         <div id="form" className="form">
           <div className="full">
             <label htmlFor="name">Name</label>

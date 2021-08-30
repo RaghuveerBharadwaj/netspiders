@@ -8,6 +8,7 @@
     position: absolute;
     opacity: .1;
     min-width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
     height: 100%;
     z-index: 0;
     object-fit: cover;
