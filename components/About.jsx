@@ -13,7 +13,7 @@ export const About = () => {
             About Us
         </h2>
         <p>
-          We are a Bangalore-based start-up that offers Digital Marketing & Web Development services. Many of the world's fastest-growing brands, as well as many small and medium-sized firms, have benefited from our assistance.
+          We are a Bangalore-based start-up that offers Digital Marketing &amp; Web Development services. Many of the world's fastest-growing brands, as well as many small and medium-sized firms, have benefited from our assistance.
         </p>
         <p>
           To ensure that you are confident that we are the best solution for you, we give a complete money return guarantee on our job. In addition to the most popular labels online, we have direct experience in an overwhelming range of industry categories. There is also a strong chance that we have time-tested familiarity with it or a very close experience, regardless of what you are offering.

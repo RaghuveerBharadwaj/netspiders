@@ -1,0 +1,45 @@
+Canonical
+
+<link rel="canonical" href="https://netspiders.in/" />
+
+OG Tags
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Helping Business to Succeed Online - Netspiders" />
+<meta property="og:description" content="Best digital marketing agency in Mysore. We provider-SEO services, PPC services, Social media marketing and Web design and development services." />
+<meta property="og:url" content="https://netspiders.in/" />
+<meta property="og:site_name" content="Netspiders" />
+<meta property="og:image" content="https://netspiders.in/logo.png" />
+
+Twitter Cards
+
+<meta name="twitter:card" content="Helping Business to Succeed Online - Netspiders">
+<meta name="twitter:description" content="Best digital marketing agency in Mysore. We provider-SEO services, PPC services, Social media marketing and Web design and development services." />
+<meta name="twitter:title" content="Best Website Development Company in Mysore - Web Designer in Mysore">
+<meta name="twitter:site" content="https://netspiders.in/">
+<meta name="twitter:image" content="https://netspiders.in/logo.png">
+
+Schema.org Codes
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "Netspiders",
+  "url": "https://netspiders.in//",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://netspiders.in//index.com{search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+
+
+Robots.txt
+
+User-agent: *
+Disallow: /
+
+Sitemap: https://netspiders.in/api/sitemap
